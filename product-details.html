@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تفاصيل المنتج</title>
+  <link rel="stylesheet" href="style-details.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index (1).html">الرئيسية</a></li>
+        <li><a href="login.html">تسجيل الدخول</a></li>
+        <li><a href="register.html">إنشاء حساب</a></li>
+        <li><a href="products.html">المنتجات</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main style="padding-top: 130px; padding-bottom: 40px;">
+    <section class="product-detail-container">
+      <div class="product-detail-card">
+        <img src="https://via.placeholder.com/300" alt="صورة المنتج" class="product-image">
+        <div class="product-info">
+          <h2>سماعة بلوتوث لاسلكية</h2>
+          <p>صوت نقي، تصميم عصري، تدعم الاتصال بجميع الأجهزة</p>
+          <p><strong>السعر:</strong> 150 جنيه</p>
+          <p><strong>التقييم:</strong> ⭐⭐⭐⭐☆ (4.5)</p>
+          <button class="btn" onclick="addToCart('سماعة بلوتوث')">أضف للسلة</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 متجرنا الإلكتروني - جميع الحقوق محفوظة</p>
+  </footer>
+
+  <script>
+    function addToCart(productName) {
+      alert(`تمت إضافة "${productName}" إلى السلة!`);
+    }
+  </script>
+</body>
+
+</html>

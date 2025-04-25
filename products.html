@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>المنتجات</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index (1).html">الرئيسية</a></li>
+        <li><a href="login.html">تسجيل الدخول</a></li>
+        <li><a href="register.html">إنشاء حساب</a></li>
+        <li><a href="Product.html" class="active">المنتجات</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main style="padding-top: 120px; padding-bottom: 40px;">
+    <section class="products-container">
+      <h2 style="text-align: center; font-size: 2rem; margin-bottom: 30px;">المنتجات الإلكترونية</h2>
+      <div class="products">
+
+        <!-- Product Card -->
+        <div class="product-card">
+          <img src="https://via.placeholder.com/200" alt="منتج" />
+          <h3>سماعة بلوتوث</h3>
+          <p>صوت عالي الجودة</p>
+          <p>السعر: 150 جنيه</p>
+          <button class="btn" onclick="addToCart('سماعة بلوتوث')">أضف للسلة</button>
+        </div>
+
+        <!-- Product Card -->
+        <div class="product-card">
+          <img src="https://via.placeholder.com/200" alt="منتج" />
+          <h3>كاميرا مراقبة</h3>
+          <p>رؤية ليلية و HD</p>
+          <p>السعر: 950 جنيه</p>
+          <button class="btn" onclick="addToCart('كاميرا مراقبة')">أضف للسلة</button>
+        </div>
+
+        <!-- More products -->
+        <!-- Add as needed -->
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 متجرنا الإلكتروني - جميع الحقوق محفوظة</p>
+  </footer>
+
+  <script>
+    function addToCart(productName) {
+      alert(`تمت إضافة "${productName}" إلى السلة!`);
+    }
+  </script>
+</body>
+
+</html>

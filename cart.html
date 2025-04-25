@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>سلة المشتريات</title>
+  <link rel="stylesheet" href="cart.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="login.html">تسجيل الدخول</a></li>
+        <li><a href="register.html">إنشاء حساب</a></li>
+        <li><a href="cart.html" class="active">السلة</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="cart-container">
+    <h2>سلة المشتريات</h2>
+    <div id="cart-items" class="cart-items">
+      <!-- مثال على عنصر في السلة -->
+      <div class="cart-item">
+        <div class="item-details">
+          <img src="https://via.placeholder.com/80" alt="product" class="product-img">
+          <div class="item-info">
+            <p class="product-name">اسم المنتج</p>
+            <p class="product-qty">الكمية: 1</p>
+          </div>
+        </div>
+        <div class="item-actions">
+          <p class="product-price">150 ج.م</p>
+          <button class="btn remove-btn">حذف</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="cart-summary">
+      <p>الإجمالي: <span id="total-price">150</span> ج.م</p>
+      <button class="btn">إتمام الشراء</button>
+    </div>
+  </div>
+
+  <script src="cart.js"></script>
+</body>
+</html>
